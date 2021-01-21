@@ -1,0 +1,19 @@
+package xadrex.pecas;
+
+import tabuleiroJogo.Tabuleiro;
+import xadrex.Color;
+import xadrex.PecaDeXadrez;
+
+public class Torre extends PecaDeXadrez{
+
+	public Torre(Tabuleiro tabuleiro, Color color) {
+		super(tabuleiro, color);
+		
+	}
+
+	@Override
+	public String toString() {
+		return "T";
+	}
+
+}
