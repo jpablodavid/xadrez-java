@@ -1,9 +1,9 @@
-package xadrex;
+package xadrez;
 
 import tabuleiroJogo.Position;
 import tabuleiroJogo.Tabuleiro;
-import xadrex.pecas.Rei;
-import xadrex.pecas.Torre;
+import xadrez.pecas.Rei;
+import xadrez.pecas.Torre;
 
 public class PartidaDeXadrez {
 	
@@ -24,10 +24,14 @@ public class PartidaDeXadrez {
 		return matriz;
 	}
 	
+	private void placeNewPiece(char coluna, int linha, PecaDeXadrez peca) {
+		tabuleiro.localPeca(peca, new XadrezPosition(coluna, linha).toPosition());
+	}
+	
 	private void iniciarPartida() {
-		tabuleiro.localPeca(new Torre(tabuleiro, Color.WHITE), new Position(2, 1));
-		tabuleiro.localPeca(new Rei(tabuleiro, Color.BLACK), new Position(0, 4));
-		tabuleiro.localPeca(new Rei(tabuleiro, Color.BLACK), new Position(7, 4));
+		placeNewPiece('b', 6, new Torre(tabuleiro, Color.WHITE));
+		placeNewPiece('e', 8, new Rei(tabuleiro, Color.BLACK));
+		placeNewPiece('e', 1, new Rei(tabuleiro, Color.BLACK));
 	}
 
 }

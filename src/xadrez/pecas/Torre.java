@@ -1,8 +1,8 @@
-package xadrex.pecas;
+package xadrez.pecas;
 
 import tabuleiroJogo.Tabuleiro;
-import xadrex.Color;
-import xadrex.PecaDeXadrez;
+import xadrez.Color;
+import xadrez.PecaDeXadrez;
 
 public class Torre extends PecaDeXadrez{
 

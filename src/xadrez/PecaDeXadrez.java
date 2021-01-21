@@ -1,4 +1,4 @@
-package xadrex;
+package xadrez;
 
 import tabuleiroJogo.Pecas;
 import tabuleiroJogo.Tabuleiro;

@@ -1,6 +1,6 @@
 package application;
 
-import xadrex.PartidaDeXadrez;
+import xadrez.PartidaDeXadrez;
 
 public class Program {
 
